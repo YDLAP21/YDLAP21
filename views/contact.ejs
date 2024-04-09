@@ -1,0 +1,15 @@
+<%-include('header.ejs')%>
+
+<form action="/contactProc" method= "post"></form>
+    <ul>
+      <li> 와이디 정신건강 상담 예약하기</li>
+          <li> 이 름 : <input type="text" name="name" required </li> 
+          <li> 연락처 : <input type="text" name="mphone" required </li>  <!-- 핸드폰은 mphone 일반전화는 phone 팩스는 fax -->
+          <li> 이메일 : <input type="text" name="email" required </li> 
+        <li> 와이디 정신건강 상담 내용 <br> 
+              <textarea name="memo" cols="50" rows="10"></textarea> </li>
+               <button>예약하기</button>
+
+    </ul>
+
+<%-include('footer.ejs')%>
